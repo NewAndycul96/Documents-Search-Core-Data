@@ -15,6 +15,9 @@
 		161772502168088900A18DD9 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617724F2168088900A18DD9 /* DocumentViewController.swift */; };
 		161772522168089C00A18DD9 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161772512168089C00A18DD9 /* DocumentsViewController.swift */; };
 		16177254216808AD00A18DD9 /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16177253216808AD00A18DD9 /* DocumentTableViewCell.swift */; };
+		1617725721680F8C00A18DD9 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617725521680F8C00A18DD9 /* Document+CoreDataClass.swift */; };
+		1617725821680F8C00A18DD9 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617725621680F8C00A18DD9 /* Document+CoreDataProperties.swift */; };
+		1617725A2168162F00A18DD9 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161772592168162F00A18DD9 /* search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1617724F2168088900A18DD9 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		161772512168089C00A18DD9 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		16177253216808AD00A18DD9 /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		1617725521680F8C00A18DD9 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1617725621680F8C00A18DD9 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		161772592168162F00A18DD9 /* search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,14 @@
 		16177239216807CD00A18DD9 /* DocumentsSearch */ = {
 			isa = PBXGroup;
 			children = (
+				1617725521680F8C00A18DD9 /* Document+CoreDataClass.swift */,
+				1617725621680F8C00A18DD9 /* Document+CoreDataProperties.swift */,
 				1617723A216807CD00A18DD9 /* AppDelegate.swift */,
 				1617723E216807CD00A18DD9 /* Main.storyboard */,
 				1617724F2168088900A18DD9 /* DocumentViewController.swift */,
 				161772512168089C00A18DD9 /* DocumentsViewController.swift */,
 				16177253216808AD00A18DD9 /* DocumentTableViewCell.swift */,
+				161772592168162F00A18DD9 /* search.swift */,
 				16177244216807CF00A18DD9 /* Assets.xcassets */,
 				16177246216807CF00A18DD9 /* LaunchScreen.storyboard */,
 				16177249216807CF00A18DD9 /* Info.plist */,
@@ -144,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1617725721680F8C00A18DD9 /* Document+CoreDataClass.swift in Sources */,
 				161772502168088900A18DD9 /* DocumentViewController.swift in Sources */,
+				1617725821680F8C00A18DD9 /* Document+CoreDataProperties.swift in Sources */,
 				16177254216808AD00A18DD9 /* DocumentTableViewCell.swift in Sources */,
 				161772522168089C00A18DD9 /* DocumentsViewController.swift in Sources */,
+				1617725A2168162F00A18DD9 /* search.swift in Sources */,
 				16177243216807CD00A18DD9 /* DocumentsSearch.xcdatamodeld in Sources */,
 				1617723B216807CD00A18DD9 /* AppDelegate.swift in Sources */,
 			);
@@ -295,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJ56668B42;
 				INFOPLIST_FILE = DocumentsSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJ56668B42;
 				INFOPLIST_FILE = DocumentsSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

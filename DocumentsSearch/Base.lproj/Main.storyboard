@@ -12,7 +12,7 @@
         <!--Documents View Controller-->
         <scene sceneID="5Kw-8o-fYB">
             <objects>
-                <viewController id="AKa-Rr-hZo" customClass="DocumentsViewController" customModule="Documents_Core_Data_Search" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AKa-Rr-hZo" customClass="DocumentsViewController" customModule="DocumentsSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8y4-Om-oPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="documentCell" rowHeight="75" id="GPo-l6-BHj" customClass="DocumentTableViewCell" customModule="Documents_Core_Data_Search" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="documentCell" rowHeight="75" id="GPo-l6-BHj" customClass="DocumentTableViewCell" customModule="DocumentsSearch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GPo-l6-BHj" id="PLh-fq-8j5">
@@ -106,7 +106,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="documentsTableView" destination="Vuh-9e-Gyk" id="QGj-wV-Hvt"/>
+                        <outlet property="documentsTableView" destination="Vuh-9e-Gyk" id="eun-H1-C5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNg-Pu-A0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
         <!--Title-->
         <scene sceneID="uFd-1G-IAf">
             <objects>
-                <viewController id="kfH-cX-jSI" customClass="DocumentViewController" customModule="Documents_Core_Data_Search" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kfH-cX-jSI" customClass="DocumentViewController" customModule="DocumentsSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ril-uZ-0Hr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

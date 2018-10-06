@@ -23,7 +23,7 @@ class DocumentViewController: UIViewController {
         if let document = document {
             let name = document.name
             nameTextField.text = name
-            contentTextView.text = document.content
+            contextTextView.text = document.content
             title = name
         }
     }
@@ -34,8 +34,8 @@ class DocumentViewController: UIViewController {
     }
     
     func alertNotifyUser(message: String) {
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
     }
@@ -52,7 +52,7 @@ class DocumentViewController: UIViewController {
             return
         }
         
-        let content = contentTextView.text
+        let content = contextTextView.text
         
         if document == nil {
             // document doesn't exist, create new one
